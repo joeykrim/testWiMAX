@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    />
+<Button android:text="HTC WiMAX toggle On"
+    android:id="@+id/HTCWiMAXOn"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:textSize="14sp"/>
+<Button android:text="HTC WiMAX toggle Off"
+    android:id="@+id/HTCWiMAXOff"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:textSize="14sp"/>
+<Button android:text="Samsung WiMAX On"
+    android:id="@+id/SamsungWiMAXOn"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:textSize="14sp"/>
+<Button android:text="Samsung WiMAX Off"
+    android:id="@+id/SamsungWiMAXOff"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:textSize="14sp"/>
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text=""
+    android:id="@+id/objectResult"
+    />
+</LinearLayout>

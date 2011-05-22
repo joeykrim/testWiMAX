@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -49,6 +50,20 @@ public class testWimax extends Activity {
                 //Intent browse = new Intent(FlashImageGUI.this, FileChooser.class);
                 //startActivityForResult(browse, FILE_BROWSER);
                 samsungWimax(false);
+            }
+        });
+        Button wimaxSettings = (Button)findViewById(R.id.wimaxSettings);
+        wimaxSettings.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                //Intent browse = new Intent(FlashImageGUI.this, FileChooser.class);
+                //startActivityForResult(browse, FILE_BROWSER);
+                Intent intent1 = new Intent(Intent.ACTION_MAIN);
+                intent1.setClassName("com.android.settings", "com.android.settings.wimax.WimaxSettings");
+                Intent intent2 = new Intent(Settings.ACTION_WIRELESS_SETTINGS);
+                Intent intentWimax = new Intent();
+                intentWimax.setAction(android.provider.Settings.ACTION_WIRELESS_SETTINGS);
+                //android.settings.WIMAX_SETTING
+                startActivity(intentWimax);
             }
         });
     }
